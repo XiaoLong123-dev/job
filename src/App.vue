@@ -10,7 +10,9 @@
     <!-- 解绑挂帅 -->
     <!-- <Jiebangguashuai></Jiebangguashuai> -->
     <!-- 求职招聘 -->
-    <Qiuzhizhaopin></Qiuzhizhaopin>
+    <!-- <Qiuzhizhaopin></Qiuzhizhaopin> -->
+    <!-- 微行金融 -->
+    <Weihangjinrong></Weihangjinrong>
     <!-- <Footer></Footer> -->
   </div>
 </template>
@@ -21,9 +23,17 @@ import Emafuwu from "@/pages/emafuwu";
 import Jiangbushenbao from "@/pages/jiangbushenbao";
 import Jiebangguashuai from "@/pages/jiebangguashuai";
 import Qiuzhizhaopin from "@/pages/qiuzhizhaopin";
+import Weihangjinrong from "@/pages/weihangjinrong";
 export default {
   name: "App",
-  components: { Home, Emafuwu, Jiangbushenbao, Jiebangguashuai, Qiuzhizhaopin },
+  components: {
+    Home,
+    Emafuwu,
+    Jiangbushenbao,
+    Jiebangguashuai,
+    Qiuzhizhaopin,
+    Weihangjinrong,
+  },
 };
 </script>
 
