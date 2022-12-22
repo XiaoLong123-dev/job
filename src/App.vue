@@ -12,7 +12,8 @@
     <!-- 求职招聘 -->
     <!-- <Qiuzhizhaopin></Qiuzhizhaopin> -->
     <!-- 微行金融 -->
-    <Weihangjinrong></Weihangjinrong>
+    <!-- <Weihangjinrong></Weihangjinrong> -->
+    <Form></Form>
     <!-- <Footer></Footer> -->
   </div>
 </template>
@@ -24,6 +25,7 @@ import Jiangbushenbao from "@/pages/jiangbushenbao";
 import Jiebangguashuai from "@/pages/jiebangguashuai";
 import Qiuzhizhaopin from "@/pages/qiuzhizhaopin";
 import Weihangjinrong from "@/pages/weihangjinrong";
+import Form from "@/pages/form";
 export default {
   name: "App",
   components: {
@@ -33,6 +35,7 @@ export default {
     Jiebangguashuai,
     Qiuzhizhaopin,
     Weihangjinrong,
+    Form,
   },
 };
 </script>

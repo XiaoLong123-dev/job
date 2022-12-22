@@ -105,7 +105,12 @@
               <a href="#"> <p>社保卡申领</p></a>
             </div>
           </div>
-          <a href="#" class="xinyongka-bottom"></a>
+          <a href="#" class="xinyongka-bottom">
+            <img
+              src="https://www.czrc.gov.cn/czrc/DFS//template/6/images/wsyhgw.png"
+              alt=""
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -183,7 +188,7 @@ export default {
           justify-content: space-between;
           font-size: 14px;
           padding-top: 10px;
-          padding-bottom: 1vw;
+          padding-bottom: 0.5vw;
           border-bottom: 1px solid #ccc;
           p {
             font-size: 14px;
@@ -201,10 +206,12 @@ export default {
           }
         }
         .detail {
+          margin-top: 0.5vw;
           width: 100%;
           height: 20%;
           border-bottom: 1px dotted #ccc;
           overflow: hidden;
+          cursor: pointer;
           p:nth-child(1) {
             width: 100%;
             height: 40%;
@@ -227,6 +234,11 @@ export default {
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
+          }
+        }
+        .detail:hover {
+          p:nth-child(1) {
+            color: orange;
           }
         }
         .list {
@@ -272,6 +284,12 @@ export default {
               color: #999;
             }
           }
+          li:hover {
+            a span,
+            span {
+              color: orange;
+            }
+          }
         }
       }
     }
@@ -305,6 +323,12 @@ export default {
             color: #b37106;
           }
         }
+        a:hover {
+          background-color: orange;
+          p {
+            color: white;
+          }
+        }
       }
       .xinyongka {
         width: 80%;
@@ -324,10 +348,16 @@ export default {
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.5s;
             p {
               font-weight: bold;
               color: #4c71d4;
               font-size: 18px;
+            }
+          }
+          .item:hover {
+            p {
+              transform: scale(0.7);
             }
           }
         }
@@ -335,8 +365,16 @@ export default {
           display: block;
           width: 100%;
           height: 50%;
-          background-image: url(https://www.czrc.gov.cn/czrc/DFS//template/6/images/wsyhgw.png);
-          background-repeat: no-repeat;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s;
+          }
+        }
+        .xinyongka-bottom:hover img {
+          transform: scale(1.1);
         }
       }
     }
